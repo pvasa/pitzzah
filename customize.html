@@ -1,0 +1,149 @@
+<!--
+    Name: Priyank Vasa
+    ID: 300872404
+    Description: This page gives user various choices for dough, sauces, toppings and pizza size.
+    Version: 1.0
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Customize pizza</title>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/customize.css" type="text/css">
+
+    </head>
+
+    <body>
+        <!-- Latest compiled and minified JQuery -->
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+        
+        <script src="js/customize.js"></script>
+
+        <div class="jumbotron">
+            <div class="container-fluid">
+                <!-- https://dribbble.com/shots/1276318-Pitzzah -->
+                <a href="../">
+                    <img class="logo img-responsive pull-left" id="logo" src="images/logo.png" alt="Pitzzah logo"/>
+                </a>
+                <h1 class="title"> Customize your pizza </h1>
+            </div>
+        </div>
+
+        <form class="container">
+            
+            <section id="dough">
+                <h2> Select dough type </h2>
+                <label class="radio-inline"><input type="radio" name="optradio">Thin</label>
+                <label class="radio-inline"><input type="radio" name="optradio">Thick</label>
+                <div class="checkbox">
+                    <label><input type="checkbox" value="">Whole wheat</label>
+                </div>
+            </section>
+
+            <hr/>
+
+            <section id="toppings">
+                <h2> Add more toppings </h2>
+                <div class="row">
+                    <div class="container-fluid col-sm-4 sausages">
+                        <h3>Sausages</h3>
+                        <label class="checkbox">
+                            <input type="checkbox" value="pesto"/>Pesto
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="salsa"/>Salsa Sauce
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="bbq"/>BBQ Sauce
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="pumpkin_pizza"/>Pumpkin Pizza Sauce
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="ranch"/>Ranch Sauce
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="pepper_jelly"/>Pepper Jelly
+                        </label>
+                    </div>
+                    <div class="container-fluid col-sm-4 vegetables">
+                        <h3>Veg toppings</h3>
+                        <label class="checkbox">
+                            <input type="checkbox" value="spinach"/>Spinach
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="broccoli"/>Broccoli
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="pineapple"/>Pineapple
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="jalapeno_peppers"/>Jalapeno Peppers
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="kalamata_olives"/>Kalamata Olives
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="mushrooms"/>Fresh Mushrooms
+                        </label>
+                    </div>
+                    <div class="container-fluid col-sm-4 non-veg">
+                        <h3>Non-veg toppings</h3>
+                        <label class="checkbox">
+                            <input type="checkbox" value="chicken"/>Chicken
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="beef"/>Beef
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="bacon"/>Bacon
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="steak"/>Steak
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="ham"/>Ham
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" value="pepperoni"/>Pepperoni
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <hr/>
+
+            <section id="size">
+                <h2> Select size </h2>
+                <select class="form-control" id="sel-size">
+                    <option>Personal - 8"</option>
+                    <option>Small - 10"</option>
+                    <option>Medium - 12"</option>
+                    <option>Large - 14"</option>
+                    <option>Extra-large - 16"</option>
+                </select>
+            </section>
+
+            <hr/>
+
+            <input type="submit" class="btn btn-success pull-right" value="Place order"/>
+            <a href="../" class="btn btn-default pull-right">Go back</a>
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+/*
+    Name: Priyank Vasa
+    ID: 300872404
+    Description: CSS file for home page
+    Version: 1.0
+*/
+
+.jumbotron {
+    background-color: #FF2B06;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.jumbotron .container-fluid img {
+    display: none;
+}
+
+.jumbotron h1, .jumbotron h4 {
+    position: relative;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+@media only screen and (min-width : 480px) {
+    .jumbotron .container-fluid img {
+        width: 20vw;
+        display: inline-block;
+    }
+    .jumbotron h1, .jumbotron h4 {
+        text-align: start;
+        text-align: left;
+    }
+}
